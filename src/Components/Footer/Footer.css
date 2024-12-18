@@ -1,0 +1,83 @@
+.footer{
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img {
+    width: 80px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensures no inline space issues */
+}
+
+.footer-top-left p {
+    font-size: 15px;
+    max-width: 400px;
+    margin: 0; /* Remove default margin */
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.footer-bottom-right{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-bottom-right p{
+    cursor: pointer;
+}
+
+.footer-bottom-right p:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.footer hr {
+    border: none; /* Remove default border */
+    height: 4px; /* Set desired thickness */
+    background: linear-gradient(267deg, #1E3A8A, #9333EA, #F43F5E); /* Gradient */
+    background-size: 400% 400%; /* Smooth animation */
+    animation: hrGradientAnimation 6s infinite ease-in-out;
+    border-radius: 50px; /* Round the edges */
+  }
+  
+  @keyframes hrGradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @media(max-width:786px){
+    .footer{
+      margin: 50px 70px;
+    }
+
+    .footer-top{
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .footer-bottom{
+      display: flex;
+      flex-direction: column-reverse;  
+      margin-bottom: 50px;
+    }
+  }

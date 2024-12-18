@@ -1,0 +1,150 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-title{
+    position: relative;
+    display: inline-block;
+    /* Ensures the underline fits the title width */
+}
+
+.mywork-title h1{
+    padding: 0px 30px;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.mywork h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    /* Distance between text and underline */
+    left: 30px;
+    /* Align with text padding */
+    width: calc(100% - 60px);
+    /* Match text width minus padding */
+    height: 6px;
+    /* Thickness of the underline */
+    background: linear-gradient(267deg, #1E3A8A 0%, #9333EA 50%, #F43F5E 100%);
+    background-size: 200% 200%;
+    animation: underlineGradientAnimation 3s infinite;
+    border-radius: 3px;
+    /* Rounded edges for the underline */
+}
+
+/* Keyframes for animated underline gradient */
+@keyframes underlineGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.mywork-container img{
+    box-sizing: border-box;
+    width: 419px;
+    height: 280px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.mywork-showmore{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+    padding: 30px 60px;
+    background: linear-gradient(267deg, #2D2D2D 0%, #000000 50%, #4B4B4B 100%);
+    /* Dark grey to black gradient */
+    background-size: 200% 200%;
+    /* For smooth animation */
+    animation: buttonGradientAnimation 3s infinite;
+    /* Animated gradient effect */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    /* Smooth transition on hover */
+    margin-bottom: 80px;
+}
+
+.mywork-showmore p{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.mywork-showmore:hover {
+    transform: scale(1.05);
+    /* Slight scale effect on hover */
+}
+
+/* Keyframes for the animated gradient effect */
+@keyframes buttonGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media(max-width:768px){
+    .mywork{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .mywork-title h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .mywork-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mywork-showmore{
+        padding: 20px 40px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,250 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.contact-title{
+    position: relative;
+    display: inline-block;
+    /* Ensures the underline fits the title width */
+}
+
+.contact-title h1{
+    padding: 0px 30px;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.contact-title h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    /* Distance between text and underline */
+    left: 30px;
+    /* Align with text padding */
+    width: calc(100% - 60px);
+    /* Match text width minus padding */
+    height: 6px;
+    /* Thickness of the underline */
+    background: linear-gradient(267deg, #1E3A8A 0%, #9333EA 50%, #F43F5E 100%);
+    background-size: 200% 200%;
+    animation: underlineGradientAnimation 3s infinite;
+    border-radius: 3px;
+    /* Rounded edges for the underline */
+}
+
+/* Keyframes for animated underline gradient */
+@keyframes underlineGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1{
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(267deg, #1E3A8A, #9333EA, #F43F5E);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradientAnimation 3s infinite;
+    /* Animated gradient effect */
+    background-size: 200% 200%;
+    /* To allow smooth gradient transition */
+}
+
+/* Keyframes for the animated gradient on text */
+@keyframes textGradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contact-left p{
+    max-width: 550px;
+    color: #d8d8d8;
+    font-size: 20px;
+    line-height: 35px; 
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #d8d8d8;
+    font-size: 22px;
+}
+
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contact-right label{
+    color: #d8d8d8;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-right input{
+    border: none;
+    width: 700px;
+    height: 78px;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #10286a9f;
+    color: #a0a0a0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contact-right textarea{
+    width: 650px;
+    border: none;
+    padding: 25px;
+    border-radius: 4px;
+    background: #10286a9f;
+    color: #a0a0a0;
+    font-family: Outfit;
+    font-size: 20px;
+}
+
+.contact-submit{
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    /* Text color */
+    background: linear-gradient(267deg, #1E3A8A 0%, #9333EA 50%, #F43F5E 100%);
+    background-size: 200% 200%;
+    /* For smooth animation */
+    animation: buttonAnimation 3s infinite;
+    /* Infinite gradient animation */
+    border: none;
+    /* Optional: Remove any default border */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+}
+
+/* Keyframes for the animated gradient */
+@keyframes buttonAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media(max-width:768px){
+    .contact{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+
+    .contact-title h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .contact-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-left h1{
+        font-size: 54px;
+    }
+
+    .contact-left p{
+        font-size: 18px;
+    }
+
+    .contact-detail{
+        gap: 20px;
+    }
+
+    .contact-detail img{
+        width: 25px;
+    }
+
+    .contact-right label{
+        font-size: 20px;
+    }
+
+    .contact-right label{
+        font-size: 20px;
+    }
+
+    .contact-right input{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .contact-right textarea{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .contact-submit{
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+}

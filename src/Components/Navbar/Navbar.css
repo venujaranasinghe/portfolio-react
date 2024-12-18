@@ -1,0 +1,230 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+.logo {
+    width: 120px;
+    /* Adjust the width to your desired size */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Ensures no inline space issues */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    /* Fallback text color */
+    font-family: 'Arial', sans-serif;
+    /* Font styling */
+}
+
+.navbar-logo h1 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 40px;
+    /* Font size for the heading */
+    font-weight: bold;
+    /* Bold text */
+    letter-spacing: 2px;
+    /* Spacing between letters */
+    color: white;
+    /* Fallback solid color */
+    background: linear-gradient(267deg, #1E3A8A, #9333EA, #F43F5E);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: navbarTextAnimation 6s infinite ease-in-out;
+}
+
+@keyframes navbarTextAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-menu li {
+    position: relative;
+    /* Required for positioning the pseudo-element */
+    cursor: pointer;
+}
+
+.nav-menu li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    /* Position below the text */
+    width: 0;
+    height: 3px;
+    /* Thickness of the underline */
+    background: linear-gradient(267deg, #1E3A8A, #9333EA, #F43F5E);
+    /* Gradient colors */
+    background-size: 200% 200%;
+    /* For smooth animation */
+    transition: width 0.3s ease;
+    /* Animation for width expansion */
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+    /* Expands to full width on hover */
+    animation: underlineAnimation 3s infinite;
+    /* Apply the gradient animation */
+}
+
+/* Keyframes for gradient animation */
+@keyframes underlineAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    /* Text color */
+    background: linear-gradient(267deg, #1E3A8A 0%, #9333EA 50%, #F43F5E 100%);
+    background-size: 200% 200%;
+    /* For smooth animation */
+    animation: buttonAnimation 3s infinite;
+    /* Infinite gradient animation */
+    border: none;
+    /* Optional: Remove any default border */
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+/* Keyframes for the animated gradient */
+@keyframes buttonAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-mob-close {
+    display: none;
+}
+
+.nav-mob-open {
+    display: none;
+}
+
+@media(max-width:768px) {
+
+    #root,
+    #root>div {
+        width: 100%;
+        /* Make the root and child elements occupy full width */
+        /* Add other styles specific to this screen size */
+    }
+
+    .navbar-logo h1 {
+        display: block;
+    }
+
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #101010;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+
+    .nav-menu li {
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+/* Styles for the menu open (hamburger) icon */
+.navbar img {
+    width: 30px;
+    /* Adjust the width as per your design */
+    height: 30px;
+    /* Adjust the height as per your design */
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh; /* Ensures the body is at least 100% of the viewport height */
+  background: linear-gradient(-45deg, #0a0a0a, #111827, #0a0a0a, #1e293b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
