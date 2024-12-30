@@ -6,9 +6,9 @@
 
 body {
   min-height: 100vh; /* Ensures the body is at least 100% of the viewport height */
-  background: linear-gradient(-45deg, #0a0a0a, #111827, #0a0a0a, #1e293b);
+  background: linear-gradient(-45deg, #0a0a0a, #151d30, #0a0a0a, #1e293b);
   background-size: 400% 400%;
-  animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 5s ease infinite;
   color: white;
   font-family: 'Outfit', sans-serif;
   margin: 0;

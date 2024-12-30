@@ -148,3 +148,16 @@
         cursor: pointer;
     }
 }
+
+p.pending {
+    margin-top: 20px;
+    color: #ffcc00; /* Gold-like color to indicate pending status */
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold; /* Make it stand out */
+    text-align: center; /* Center the text */ /* Add some spacing above */
+    margin-bottom: 50px; /* Remove default spacing below */
+    background-color: #000000; /* Dark background for contrast */
+    padding: 5px 10px; /* Add some padding for better appearance */
+    border-radius: 4px; /* Smooth rounded corners */
+  }
+  

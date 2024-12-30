@@ -81,3 +81,53 @@
       margin-bottom: 50px;
     }
   }
+
+  .logo {
+    width: 120px;
+    /* Adjust the width to your desired size */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Ensures no inline space issues */
+}
+
+.footer-logo {
+    display: flex;
+    padding: 0;
+    color: white;
+    /* Fallback text color */
+    font-family: 'Arial', sans-serif;
+    /* Font styling */
+}
+
+.footer-logo h1 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 30px;
+    /* Font size for the heading */
+    font-weight: bold;
+    /* Bold text */
+    letter-spacing: 2px;
+    /* Spacing between letters */
+    color: white;
+    /* Fallback solid color */
+    background: linear-gradient(267deg, #1E3A8A, #9333EA, #F43F5E);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: navbarTextAnimation 6s infinite ease-in-out;
+}
+
+@keyframes navbarTextAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

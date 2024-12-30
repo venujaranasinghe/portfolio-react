@@ -28,8 +28,8 @@ const Navbar = () => {
           <li><AnchorLink className='anchor-link' href='#home'>Home</AnchorLink></li>
           <li><AnchorLink className='anchor-link' offset={50} href='#about'>About Me</AnchorLink></li>
           <li><AnchorLink className='anchor-link' offset={50} href='#services'>Services</AnchorLink></li>
-          <li><AnchorLink className='anchor-link' offset={50} href='#work'>Portfolio</AnchorLink></li>
-          <li><AnchorLink className='anchor-link' offset={50} href='#contact'>Contact</AnchorLink></li>
+          <li><AnchorLink className='anchor-link' offset={50} href='#work'>My Work</AnchorLink></li>
+          <li><AnchorLink className='anchor-link' offset={50} href='#contact'>Contact Me</AnchorLink></li>
         </ul>
         <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
     </div>
