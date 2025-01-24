@@ -1,46 +1,52 @@
-import project1_img from '../assets/project_1.svg'
-import project2_img from '../assets/project_2.svg'
-import project3_img from '../assets/project_3.svg'
-import project4_img from '../assets/project_4.svg'
-import project5_img from '../assets/project_5.svg'
-import project6_img from '../assets/project_6.svg'
+import project1 from '../assets/1.png';
+import project2 from '../assets/2.png';
+import project3 from '../assets/3.png';
+import project4 from '../assets/4.png';
+import project5 from '../assets/5.png';
+import project6 from '../assets/6.png';
 
 const mywork_data = [
     {
         w_no:1,
-        w_name:"Web design",
-        w_img:project1_img,
+        w_name:"Vite_React Portfolio",
+        w_img:project1,
         link: "https://github.com/venujaranasinghe?tab=repositories",
+        description: "A responsive web design project showcasing modern UI techniques.",
     },
     {
         w_no:2,
-        w_name:"Web design",
-        w_img:project2_img,
+        w_name:"WallPaper Application",
+        w_img:project2,
         link: "https://github.com/venujaranasinghe?tab=repositories",
+        description: "A responsive web design project showcasing modern UI techniques.",
     },
     {
         w_no:3,
-        w_name:"Web design",
-        w_img:project3_img,
+        w_name:"Dashboard of Floral Shop(Spring Boot)",
+        w_img:project3,
         link: "https://github.com/venujaranasinghe?tab=repositories",
+        description: "A responsive web design project showcasing modern UI techniques.",
     },
     {
         w_no:4,
-        w_name:"Web design",
-        w_img:project4_img,
+        w_name:"MERN Blog Application Backend",
+        w_img:project4,
         link: "https://github.com/venujaranasinghe?tab=repositories",
+        description: "A responsive web design project showcasing modern UI techniques.",
     },
     {
         w_no:5,
-        w_name:"Web design",
-        w_img:project5_img,
+        w_name:"Light themed User Blog Application",
+        w_img:project5,
         link: "https://github.com/venujaranasinghe?tab=repositories",
+        description: "A responsive web design project showcasing modern UI techniques.",
     },
     {
         w_no:6,
-        w_name:"Web design",
-        w_img:project6_img,
+        w_name:"Dark themed User Blog Application",
+        w_img:project6,
         link: "https://github.com/venujaranasinghe?tab=repositories",
+        description: "A responsive web design project showcasing modern UI techniques.",
     },
 ]
  

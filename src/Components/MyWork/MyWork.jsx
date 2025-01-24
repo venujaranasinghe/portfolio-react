@@ -19,18 +19,21 @@ const MyWork = () => {
                 })}
             </div>
 
+            <a href="https://github.com/venujaranasinghe" target="_blank" rel="noopener noreferrer">
+                <div className="mywork-showmore">
+                    <p>Show More</p>
+                    <img src={arrow_icon} alt="" />
+                </div>
+            </a>
+
+
             <div className="mywork-title">
-                <h1>Check out my blogs! 👇🏽</h1>
+                <h1>Check out my blogs! </h1>
                 <p className="pending">Pending...</p>
 
             </div>
-
-
-            {/*<div className="mywork-showmore">
-                <p>Show More</p>
-                <img src={arrow_icon} alt="" />
-            </div>*/}
         </div>
+
     )
 }
 
