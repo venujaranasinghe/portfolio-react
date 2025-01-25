@@ -66,7 +66,7 @@ Ensure that your `package.json` file includes the correct `homepage` property, s
 If you have any suggestions or feedback, feel free to reach out through the contact form on my portfolio or open an issue in this repository.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+Pending...
 
 ---
 
