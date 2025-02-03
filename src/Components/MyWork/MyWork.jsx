@@ -15,7 +15,7 @@ const MyWork = () => {
             <div className="mywork-title">
                 <h1>My Latest Work</h1>
             </div>
-            <div className="mywork-container">
+            {/* <div className="mywork-container">
                 {mywork_data.map((work, index) => {
                     return (
                         <a key={index} href={work.link} target="_blank" rel="noopener noreferrer">
@@ -23,49 +23,72 @@ const MyWork = () => {
                         </a>
                     );
                 })}
-            </div>
+            </div> */}
 
-            <a href="https://github.com/venujaranasinghe" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://github.com/venujaranasinghe" target="_blank" rel="noopener noreferrer">
                 <div className="mywork-showmore">
                     <p>Show More</p>
                     <img src={arrow_icon} alt="" />
                 </div>
-            </a>
+            </a> */}
 
             <div className="banner">
-                <div className="slider">
-                    <div className="item1">
-                        <img src={p1} alt="" />
+                <div className="slider" style={{ "--quantity": 10 }}>
+                    <div className="item" style={{ "--position": 1 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p1} alt="" />
+                        </a>
                     </div>
-                    <div className="item2">
-                        <img src={p2} alt="" />
+                    <div className="item" style={{ "--position": 2 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p2} alt="" />
+                        </a>
                     </div>
-                    <div className="item3">
-                        <img src={p3} alt="" />
+                    <div className="item" style={{ "--position": 3 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p3} alt="" />
+                        </a>
                     </div>
-                    <div className="item4">
-                        <img src={p4} alt="" />
+                    <div className="item" style={{ "--position": 4 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p4} alt="" />
+                        </a>
                     </div>
-                    <div className="item5">
-                        <img src={p5} alt="" />
+                    <div className="item" style={{ "--position": 5 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p5} alt="" />
+                        </a>
                     </div>
-                    <div className="item6">
-                        <img src={p6} alt="" />
+                    <div className="item" style={{ "--position": 6 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p6} alt="" />
+                        </a>
                     </div>
-                    <div className="item7">
-                        <img src={p1} alt="" />
+                    <div className="item" style={{ "--position": 7 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p1} alt="" />
+                        </a>
                     </div>
-                    <div className="item8">
-                        <img src={p2} alt="" />
+                    <div className="item" style={{ "--position": 8 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p2} alt="" />
+                        </a>
                     </div>
-                    <div className="item9">
-                        <img src={p3} alt="" />
+                    <div className="item" style={{ "--position": 9 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p3} alt="" />
+                        </a>
                     </div>
-                    <div className="item10">
-                        <img src={p4} alt="" />
+                    <div className="item" style={{ "--position": 10 }}>
+                        <a href="https://github.com/venujaranasinghe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <img src={p4} alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
+
+
+
 
             <div className="mywork-title">
                 <h1>Check out my blogs! </h1>
