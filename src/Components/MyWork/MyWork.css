@@ -236,3 +236,36 @@ p.pending {
     background-color: #1E3A8A;
 }
 
+
+
+/* Slider css code */
+.banner {
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   overflow: hidden;
+   position: relative; 
+}
+
+.banner .slider {
+    position: absolute;
+    width: 400px; /* Wider width for landscape */
+    height: 250px; /* Adjust height if needed */
+    top: 10%;
+    left: calc(50% - 200px); /* Center horizontally (half of width) */
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: translate(550px);
+}
+
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
